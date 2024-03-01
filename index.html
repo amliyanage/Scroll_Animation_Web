@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="bg bg-1"></div>
+        <h1>Visit Sri Lanka!</h1>
+        <div class="bg bg-2"></div>
+    </div>
+    <div class="About"></div>
+
+    <script>
+       let listBg = document.querySelectorAll('.bg');
+       let listTab = document.querySelectorAll('.About');
+       let title = document.querySelectorAll('.banner h1');
+
+       window.addEventListener("scroll",(event) =>{
+
+        let top = this.scrollY;
+
+        listBg.forEach((bg,index) =>{
+            if(index !=0 && index !=2){
+                bg.style.transform = `translateY(${(top*index/2)}px)`;
+            }
+            else if(index == 0){
+                bg.style.transform = `translateY(${(top/3)}px)`;
+            }
+        })
+            title.style.transform = `translateY(${(top*4/2)}px)`;
+       })
+    </script>
+</body>
+</html>

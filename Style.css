@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body{
+    margin :0;
+    background-color: #ffffff;
+    font-family: Poppins;
+    font-size: 15px;
+}
+.banner{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.banner .bg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto 100%;
+    background-position: center bottom;
+    transition: 0.1s;
+}
+
+.banner .bg-1{
+    background-image: url("img/Firefly\ 20240301133437.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner .bg-2{
+    background-image: url("img/man-with-backpack-standing-top-mountain-looking-sunset.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 153px;
+}
+
+.banner  h1{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 11rem;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+}
+
+.About{
+    height: 100vh;
+}
